@@ -42,6 +42,12 @@ public/
 vercel.json    cache headers for images
 ```
 
+## Tests
+
+`python -m pytest -q tests` serves the page locally, opens it in Chromium and checks
+that the headline shows and no script error is thrown — on load and while scrolling.
+Needs `pip install pytest playwright` and `python -m playwright install chromium`.
+
 ## Licence
 
 Code — MIT, see [LICENSE](LICENSE). The photos are personal and are not covered by the licence.
